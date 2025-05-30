@@ -1,4 +1,4 @@
-package com.guada.cfp401.cursoappsmoviles
+package com.guada.cfp401.cursoappsmoviles.Ejercicios
 
 fun areaRectangulo(base: Double =1.0, altura: Double =1.0) : String {
     return "El area del rectangulo es: ${base * altura}"

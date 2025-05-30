@@ -1,4 +1,4 @@
-package com.guada.cfp401.cursoappsmoviles
+package com.guada.cfp401.cursoappsmoviles.Sintaxis
 
 fun esMayordeEdad(edad: Int): String {
     return if (edad >= 18) "Es mayor de edad"

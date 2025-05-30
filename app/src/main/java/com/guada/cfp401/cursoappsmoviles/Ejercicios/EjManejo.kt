@@ -1,4 +1,4 @@
-package com.guada.cfp401.cursoappsmoviles
+package com.guada.cfp401.cursoappsmoviles.Ejercicios
 fun main () {
     println (sacarRegistro (18, false))
     println (sacarRegistro (16, false))

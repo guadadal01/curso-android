@@ -1,4 +1,4 @@
-package com.guada.cfp401.cursoappsmoviles
+package com.guada.cfp401.cursoappsmoviles.Ejercicios
 
 fun main (){
     val resultado = compararPersonas("Guadalupe", "Martina")
