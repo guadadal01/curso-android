@@ -33,6 +33,36 @@ fun ejArray3B(){
     println ("El minimo numero es: $minimo")
     println ("El maximo numero es: $maximo")
 }
-fun main (){
-    ejArray3B()
+
+    /**TODO:
+     * 1. recibir el array por parametros
+     * 2. Inicializar un contador en 0
+     * 3. mientras recorro el arreglo, sacar el modulo sw cada elem por 2
+     * 3.1. si el modulo es igual a 0, es par.
+     * 3.2. incremento el contador de pares
+     * 4. imprimo el contador
+     */
+    fun ejArray4(arreglo: Array<Int>){
+        var contador: Int = 0
+        val pares: ArrayList<Int> = arrayListOf()
+        for (num in arreglo){
+            if (num % 2 == 0){
+                contador++
+            pares.add(num)
+            }
+        }
+        println ("Los pares son $pares y en total son: $contador")
+}
+
+fun ejArray5 (colores: ArrayList<String>){
+    for ((indice, color) in colores. withIndex()) {
+        if (color == "rojo") colores[indice] = color.uppercase()
+    }
+    println(colores)
+}
+fun ejArray6(gradosCelsius: Array <Double>){
+    val gradosFahrenheit = gradosCelsius
+}
+    fun main (){
+    val resultado = ejArray6(arrayOf(20.4,2.5,3.0,5.2, -5.0))
 }
