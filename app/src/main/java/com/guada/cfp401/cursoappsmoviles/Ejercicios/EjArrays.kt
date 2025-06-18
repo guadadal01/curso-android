@@ -60,9 +60,17 @@ fun ejArray5 (colores: ArrayList<String>){
     }
     println(colores)
 }
-fun ejArray6(gradosCelsius: Array <Double>){
-    val gradosFahrenheit = gradosCelsius
+fun ejArray6(gradosCelsius: Array <Double>): List <Double> {
+    val gradosFahrenheit : List<Double> = gradosCelsius.map {
+        (it * 9/5) + 32
+    }
+    return gradosFahrenheit
 }
-    fun main (){
-    val resultado = ejArray6(arrayOf(20.4,2.5,3.0,5.2, -5.0))
+
+fun main (){
+    val animales = arrayOf("gato", "Halcon","Araña","Cienpies")
+    val patas = arrayOf(4,2,6,100)
+    for (i in animales.indices) {
+        println("${animales[i]} tiene ${patas[i]} patas")
+    }
 }
