@@ -56,7 +56,23 @@ fun ejercicio6() {
     }
     println(displayAlertMessage(operatingSystem, emailId))
 }
-
-fun main (){
-   ejercicio6()
+fun ejercicio7() {
+    val steps = 4000
+    val caloriesBurned = stepsToCalories(steps);
+    println("Walking $steps steps burns $caloriesBurned calories")
 }
+fun stepsToCalories(numberOFStepS: Int): Double {
+    val caloriesBurnedforEachStep = 0.04
+    val totalCalBurned = numberOFStepS * caloriesBurnedforEachStep
+    return totalCalBurned
+}
+fun ejercicio8 (tiempoUsadoHoy: Int, tiempoUsadoAyer: Int): Boolean{
+    return tiempoUsadoHoy > tiempoUsadoAyer
+}
+fun ejercicio9 (nameCity: String, minTemp: Int, maxTemp: Int, probLluvia: Int): String{
+    return "Ciudad: $nameCity, Minima de temperatura: $minTemp, Maxima de temperatura: $maxTemp, Probabilidad de lluvias: $probLluvia%"
+}
+fun main(){
+    println (ejercicio9("New york", 13, 20, 5))
+}
+
