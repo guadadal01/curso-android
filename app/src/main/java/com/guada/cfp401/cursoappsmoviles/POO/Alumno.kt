@@ -1,25 +1,14 @@
 package com.guada.cfp401.cursoappsmoviles.POO
 
-class Alumno {
-    var nombre = ""
-    var nota = 0
+class Alumno (nombre: String, val notas: List<Double>) {
+    fun promedio() = notas.average()
 
-    fun inicializar(){
-        print("Nombre del alumno:")
-        nombre = readln().toString()
-        print("Nota del alumno:")
-        nota = readln().toInt()
-    }
-    fun estadoAlumno(){
-        if (nota >= 4)
-            print("Alumno regular")
-        else
-            print ("Desaprobado")
+    fun aprobo(): Boolean {
+        return promedio() >= 6
     }
 }
-
-fun main (){
-    val alumno1 = Alumno()
-    alumno1.inicializar()
-    alumno1.estadoAlumno()
+fun main(){
+    val alumno1 = Alumno ("Guada", listOf(5.5,8.0,7.2))
+    alumno1.promedio()
+    alumno1.aprobo()
 }
